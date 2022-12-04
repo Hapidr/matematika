@@ -13,5 +13,4 @@ for i in range(freeSpace):
       kunci = int(input("Masukkan kunci : "))
       ruang[h(kunci, freeSpace)].append(kunci)
 
-print("Yahah hayuuk")
 print(ruang)
