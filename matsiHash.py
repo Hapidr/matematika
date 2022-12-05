@@ -31,16 +31,19 @@ def printAble(b):
     print("")
 
 
-panjangIndeks = int(input("Masukkan jumlah memori kosong : "))
-create(panjangIndeks)
 validation = True
 try:
+    panjangIndeks = int(input("Jumlah memori yang tersedia : "))
+    create(panjangIndeks)
     while (validation):
-        key = int(input("Masukkan kunci : "))
+        key = int(input(
+            "\nJika tidak ada kunci yang ditambahkan lagi masukkan q\nkunci : "))
         insert(key, panjangIndeks)
         printAble(panjangIndeks)
-        confirmation = input("Tambah data (Y/n) : ")
-        if confirmation != 'y'.lower():
+        # validate = input(
+        # "Masukkan 'q' jika tidak ada kunci yang dimasukkan lagi\n")
+        if str(key) == 'q'.lower():
             validation = False
+            print(key)
 except:
-    print("Nilai yang anda masukkan tidak sesuai!")
+    print("Program Selesai.")
