@@ -40,8 +40,6 @@ try:
             "\nJika tidak ada kunci yang ditambahkan lagi masukkan q\nkunci : "))
         insert(key, panjangIndeks)
         printAble(panjangIndeks)
-        # validate = input(
-        # "Masukkan 'q' jika tidak ada kunci yang dimasukkan lagi\n")
         if str(key) == 'q'.lower():
             validation = False
             print(key)
